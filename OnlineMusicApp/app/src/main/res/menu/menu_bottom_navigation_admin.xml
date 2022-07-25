@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/it_MuiscList"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="Pending"/>
+    <item
+        android:id="@+id/it_Search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="Search"/>
+    <item
+        android:id="@+id/it_InfoUser"
+        android:icon="@drawable/ic_queue_music_white_24dp"
+        android:title="Extension"/>
+</menu>

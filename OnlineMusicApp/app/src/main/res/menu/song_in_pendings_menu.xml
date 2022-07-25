@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Xác nhận"
+        android:id="@+id/pendingSong_OK"/>
+    <item android:title="Xóa bỏ"
+        android:id="@+id/pendingSong_remove"/>
+</menu>

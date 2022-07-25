@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context=".FragmentPlaylist">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/playlist_search"
+            app:iconifiedByDefault="false"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:queryBackground="@null"
+            android:background="@drawable/playlist_search_bar">
+        </androidx.appcompat.widget.SearchView>
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/addPlaylistButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="bottom"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:minHeight="50dp"
+            android:minWidth="75dp"
+            android:textColor="@color/playlist_gray" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playGridView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="75dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:numColumns="2"/>
+
+    <!-- when no playlist -->
+    <TextView
+        android:id="@+id/nonePlaylistForShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/playlist_gray"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/addPlaylistButtonBelow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple_button"
+        android:minWidth="74dp"
+        android:minHeight="30dp"
+        android:text="@string/add"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:textAllCaps="false"
+        android:textColor="@color/playlist_gray"
+        android:visibility="invisible"/>
+
+</FrameLayout>

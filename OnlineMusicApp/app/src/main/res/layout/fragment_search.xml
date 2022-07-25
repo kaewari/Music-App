@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#33FFCC"
+            android:text="SEARCH"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/edt_Id"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:hint="Id"
+            android:textSize="20dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edt_IdSinger"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Name song"
+            android:textSize="20dp"
+            android:inputType="number"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_SearchSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search song"
+                android:backgroundTint="#33FFCC" />
+
+            <Button
+                android:id="@+id/btn_SearchSinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Search singer"
+                android:backgroundTint="#33FFCC"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_DeleteSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete song"
+                android:backgroundTint="#33FFCC" />
+
+            <Button
+                android:id="@+id/btn_DeleteSinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Delete singer"
+                android:backgroundTint="#33FFCC"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ResultSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</FrameLayout>
